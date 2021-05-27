@@ -1,0 +1,139 @@
+
+<style>
+    * { box-sizing:border-box; }
+    body {
+    background:#aaa;
+    color:#bbb;
+    }
+
+    .keyboard {
+    margin:30px auto;
+    width:90%;
+    height:400px;
+    background:#bbb;
+    padding:30px 80px;
+    border-radius:10px;
+    border-bottom:6px solid #999;
+    }
+
+    .key-row {
+    display:-webkit-flex;
+    margin:0 auto 7px;
+    line-height:50px;
+    }
+
+    .key, .arrowkey-container {
+    margin:0 6px 0 0; 
+    text-align:center;
+    }
+
+    .key { 
+    background:#444;
+    color:#eee;
+    border-radius:4px;
+    box-shadow:0 1px 0 #222, inset 0 1px 3px rgba(255,255,255,0.1);
+    transition:0.1s;
+    align-items:center;
+    align-content:center;
+    height:57px;
+    border:2px solid rgba(0,0,0,0.08);
+    cursor:pointer;
+    }
+
+    .key:active {background:#333}
+
+    .one { flex:1; } /* one */
+    .one-one-half { flex:1.5; } /* One and one half */
+    .two { flex:2; } /* two */
+    .two-two-half { flex:2.5; } /* Two and two half */
+    .three { flex:3; } /* three */
+    .five { flex:5; }
+
+    .key-row .key:last-child { margin:0; }
+
+    .l { text-align:left; padding-left:12px; }
+    .r { text-align:right; padding-right:12px; }
+
+</style>
+
+<div class="keyboard">
+
+    <section class="key-row">
+      <div class="key one">~</div>
+      <div class="key one">1</div>
+      <div class="key one">2</div>
+      <div class="key one">3</div>
+      <div class="key one">4</div>
+      <div class="key one">5</div>
+      <div class="key one">6</div>
+      <div class="key one">7</div>
+      <div class="key one">8</div>
+      <div class="key one">9</div>
+      <div class="key one">0</div>
+      <div class="key one">-</div>
+      <div class="key one">=</div>
+      <div class="key two">backspace</div>
+    </section>
+      
+    <section class="key-row">
+      <div class="key one-one-half l">tab</div>
+      <div class="key one">q</div>
+      <div class="key one">w</div>
+      <div class="key one">e</div>
+      <div class="key one">r</div>
+      <div class="key one">t</div>
+      <div class="key one">y</div>
+      <div class="key one">u</div>
+      <div class="key one">i</div>
+      <div class="key one">o</div>
+      <div class="key one">p</div>
+      <div class="key one">[</div>
+      <div class="key one">]</div>
+      <div class="key one">\</div>
+    </section>
+      
+    <section class="key-row">
+      <div class="key one-one-half l">search</div>
+      <div class="key one">a</div>
+      <div class="key one">s</div>
+      <div class="key one">d</div>
+      <div class="key one">f</div>
+      <div class="key one">g</div>
+      <div class="key one">h</div>
+      <div class="key one">j</div>
+      <div class="key one">k</div>
+      <div class="key one">l</div>
+      <div class="key one">;</div>
+      <div class="key one">'</div>
+      <div class="key two r">enter</div>
+    </section>
+      
+    <section class="key-row">
+      <div class="key two-two-half l">shift</div>
+      <div class="key one">z</div>
+      <div class="key one">x</div>
+      <div class="key one">c</div>
+      <div class="key one">v</div>
+      <div class="key one">b</div>
+      <div class="key one">n</div>
+      <div class="key one">m</div>
+      <div class="key one">&lt;</div>
+      <div class="key one">></div>
+      <div class="key one">/</div>
+      <div class="key two-two-half r">shift</div>
+     </section>
+        
+    <section class="key-row">
+      <div class="key two l">ctrl</div>
+      <div class="key two l">alt</div>
+      <div class="key five"><!-- Spacebar --></div>
+      <div class="key one-one-half">alt</div>
+      <div class="key one">ctrl</div>
+      <div class="arrowkey-container two-two-half">
+      
+      </div>
+    </section>
+      
+    </div>
+      
+    </div>
